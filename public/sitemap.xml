@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 英语页面 -->
   <url>
-    <loc>https://smartguide-ten.vercel.app/</loc>
+    <loc>https://smartguide-ten.vercel.app/en/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,73 +12,299 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://smartguide-ten.vercel.app/en/blog/best-smart-home-devices-2024</loc>
+    <loc>https://smartguide-ten.vercel.app/en/category/smart-home</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/category/phone-accessories</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/category/tech-guides</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 德语页面 -->
+  <url>
+    <loc>https://smartguide-ten.vercel.app/de/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/de/blog</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/de/category/smart-home</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/de/category/phone-accessories</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/de/category/tech-guides</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 法语页面 -->
+  <url>
+    <loc>https://smartguide-ten.vercel.app/fr/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/fr/blog</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/fr/category/smart-home</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/fr/category/phone-accessories</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/fr/category/tech-guides</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 英语文章 (50篇) -->
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/best-smart-home-devices-2024</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://smartguide-ten.vercel.app/en/blog/best-phone-chargers-2024</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://smartguide-ten.vercel.app/en/blog/setup-smart-home-beginner-guide</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-1</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-2</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-3</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-4</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-5</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-1</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-1-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-2</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-2-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-3</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-3-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-4</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-4-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-5</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-5-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-6</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-6-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-7</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-7-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-8</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-8-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-9</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/smart-home-9-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-1</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-1-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-2-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-3</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-3-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-4</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-4-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-5</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-5-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-6</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-6-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-7</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-7-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-8</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-8-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-9</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/phone-accessory-9-buying-guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://smartguide-ten.vercel.app/en/blog/tech-guide-1</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/tech-guide-2</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/tech-guide-3</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/tech-guide-4</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/tech-guide-5</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://smartguide-ten.vercel.app/en/blog/tech-guide-6</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

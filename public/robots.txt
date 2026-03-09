@@ -1,4 +1,6 @@
+# Robots.txt for SmartGuide
 User-agent: *
 Allow: /
 
+# Sitemaps
 Sitemap: https://smartguide-ten.vercel.app/sitemap.xml
