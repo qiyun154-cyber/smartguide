@@ -5,7 +5,7 @@
  */
 
 import { Article, ArticleMultilingual, Category } from './types';
-import generatedArticles from './generated-articles.json';
+import { generatedArticles } from './generated-articles';
 
 // 内部存储类型（多语言）
 type StoredArticle = ArticleMultilingual;
