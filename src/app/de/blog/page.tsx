@@ -1,6 +1,7 @@
 import { getArticlesByLocale, getAllCategories } from '@/content/data';
 import { seoConfig } from '@/content/seo';
 import Link from 'next/link';
+import Header from '@/components/Header';
 
 export const metadata = {
   title: `Blog - ${seoConfig.siteName}`,
@@ -13,22 +14,8 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/de" className="text-2xl font-bold text-gray-900">
-            {seoConfig.siteName}
-          </Link>
-          <nav className="flex gap-4">
-            <Link href="/de" className="text-gray-600 hover:text-gray-900">
-              Startseite
-            </Link>
-            <Link href="/de/blog" className="text-gray-600 hover:text-gray-900">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+      {/* Header with Language Switcher */}
+      <Header locale="de" siteName={seoConfig.siteName} />
 
       {/* Hero */}
       <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12">

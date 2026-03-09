@@ -9,9 +9,16 @@ interface HeaderProps {
   siteName: string;
 }
 
+const navLabels: Record<string, { home: string; blog: string }> = {
+  en: { home: 'Home', blog: 'Blog' },
+  de: { home: 'Startseite', blog: 'Blog' },
+  fr: { home: 'Accueil', blog: 'Blog' },
+};
+
 export default function Header({ locale, siteName }: HeaderProps) {
   const pathname = usePathname();
   const basePath = `/${locale}`;
+  const labels = navLabels[locale] || navLabels.en;
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -37,7 +44,7 @@ export default function Header({ locale, siteName }: HeaderProps) {
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
-              Home
+              {labels.home}
             </Link>
             <Link
               href={`${basePath}/blog`}
@@ -47,7 +54,7 @@ export default function Header({ locale, siteName }: HeaderProps) {
                   : 'text-gray-700 hover:bg-gray-100'
               }`}
             >
-              Blog
+              {labels.blog}
             </Link>
           </nav>
 
