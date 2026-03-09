@@ -3,6 +3,7 @@ import { seoConfig } from '@/content/seo';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
+import Header from '@/components/Header';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -50,22 +51,8 @@ export default async function BlogPost({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-gray-900">
-            {seoConfig.siteName}
-          </Link>
-          <nav className="flex gap-4">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">
-              Home
-            </Link>
-            <Link href="/en/blog" className="text-gray-600 hover:text-gray-900">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+      {/* Header with Language Switcher */}
+      <Header locale="en" siteName={seoConfig.siteName} />
 
       {/* Article */}
       <article className="max-w-4xl mx-auto px-4 py-12">
