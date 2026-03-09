@@ -4,10 +4,18 @@
  * 后续会通过AI自动生成更多内容
  */
 
-import { Article, ArticleMultilingual, Category } from './types';
+// 直接require JSON文件和类型
+const fs = require('fs');
+const path = require('path');
+const generatedArticlesData = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'generated-articles.json'), 'utf8')
+);
 
-// 直接require JSON文件
-const generatedArticlesData = require('./generated-articles.json');
+const {
+  Article,
+  ArticleMultilingual,
+  Category
+}: typeof types;
 
 // 内部存储类型（多语言）
 type StoredArticle = ArticleMultilingual;
@@ -69,7 +77,7 @@ export const articles: StoredArticle[] = [
       fr: 'Meilleurs Appareils Maison Connectée 2024: Guide Complet',
     },
     description: {
-      en: 'Discover the best smart home devices for 2024. Our comprehensive guide covers everything from smart speakers to security systems.',
+      en: 'Discover best smart home devices for 2024. Our comprehensive guide covers everything from smart speakers to security systems.',
       de: 'Entdecken Sie die besten Smart Home Geräte für 2024. Unser umfassender Leitfaden behandelt alles von intelligenten Lautsprechern bis zu Sicherheitssystemen.',
       fr: 'Découvrez les meilleurs appareils maison connectée pour 2024. Notre guide complet couvre tout des enceintes intelligentes aux systèmes de sécurité.',
     },
@@ -103,9 +111,7 @@ Smart home technology has evolved dramatically in recent years. Whether you're l
 2. **Start small**: Begin with one category and expand
 3. **Consider future needs**: Choose expandable
 
-Investing systems
-
-## Conclusion in smart home devices can significantly improve your quality of life. Start with the basics and expand as you become more comfortable with the technology.`,
+Investing in smart home devices can significantly improve your quality of life. Start with basics and expand as you become more comfortable with technology.`,
       de: `# Beste Smart Home Geräte 2024
 
 ## Einleitung
@@ -170,7 +176,7 @@ La technologie maison connectée a considérablement évolué ces dernières ann
       fr: 'Meilleurs Chargeurs Téléphone 2024: Guide Charge Rapide',
     },
     description: {
-      en: 'Find the best phone chargers for fast and efficient charging. We review wall chargers, wireless chargers, and car chargers.',
+      en: 'Find best phone chargers for fast and efficient charging. We review wall chargers, wireless chargers, and car chargers.',
       de: 'Finden Sie die besten Handyladegeräte für schnelles und effizientes Laden. Wir testen Wandladegeräte, kabellose Ladegeräte und Autoladegeräte.',
       fr: 'Trouvez les meilleurs chargeurs téléphone pour une charge rapide et efficace. Nous testons les chargeurs secteur, sans fil et voiture.',
     },
@@ -179,7 +185,7 @@ La technologie maison connectée a considérablement évolué ces dernières ann
 
 ## Why Fast Charging Matters
 
-In today's fast-paced world, having a reliable charger is essential. Whether you're at home, in the office, or on the go, the right charger can make a big difference.
+In today's fast-paced world, having a reliable charger is essential. Whether you're at home, in office, or on the go, => right charger can make a big difference.
 
 ## Types of Chargers
 
@@ -300,7 +306,7 @@ A smart home uses internet-connected devices to enable remote management of appl
 
 1. **Start simple**: Don't overcomplicate initially
 2. **Think about compatibility**: Choose devices that work together
-3. **Plan for the future**: Buy expandable systems`,
+3. **Plan for future**: Buy expandable systems`,
       de: `# Smart Home Anfängerleitfaden
 
 ## Was ist ein Smart Home?
@@ -332,7 +338,7 @@ Une maison connectée utilise des appareils connectés à Internet.
 - Apple HomeKit
 
 ### Étape 2: Commencez par les Bases
-1. Enceinte intelligente
+1. Enceintes intelligentes
 2. Ampoules connectées
 3. Thermostat intelligent`,
     },
@@ -380,7 +386,7 @@ export function getArticlesByCategory(categorySlug: string, locale: string = 'en
       title: article.title[locale] || article.title.en,
       description: article.description[locale] || article.description.en,
       content: article.content[locale] || article.content.en,
-      keywords: article.keywords,
+      keywords: article.keyword,
       category: article.category,
       tags: article.tags,
       createdAt: article.createdAt,
