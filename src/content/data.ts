@@ -351,7 +351,9 @@ export function getAllArticles(): StoredArticle[] {
 
 // 按语言获取文章 - 返回单语言版本
 export function getArticlesByLocale(locale: string): Article[] {
-  return articles.map((article): Article => ({
+  // 获取所有文章（包括示例文章和生成的文章）
+  const allArticles = getAllArticles();
+  return allArticles.map((article): Article => ({
     id: article.id,
     slug: article.slug,
     title: article.title[locale] || article.title.en,
