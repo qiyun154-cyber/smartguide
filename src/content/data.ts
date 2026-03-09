@@ -5,6 +5,7 @@
  */
 
 import { Article, ArticleMultilingual, Category } from './types';
+import generatedArticles from './generated-articles.json';
 
 // 内部存储类型（多语言）
 type StoredArticle = ArticleMultilingual;
@@ -345,7 +346,7 @@ Une maison connectée utilise des appareils connectés à Internet.
 
 // 获取所有文章 - 返回原始多语言数据
 export function getAllArticles(): StoredArticle[] {
-  return articles;
+  return [...articles, ...generatedArticles as StoredArticle[]];
 }
 
 // 按语言获取文章 - 返回单语言版本
