@@ -4,18 +4,10 @@
  * 后续会通过AI自动生成更多内容
  */
 
-// 直接require JSON文件和类型
-const fs = require('fs');
-const path = require('path');
-const generatedArticlesData = JSON.parse(
-  fs.readFileSync(path.join(__dirname, 'generated-articles.json'), 'utf8')
-);
+// 导入生成的文章数据
+import { generatedArticles } from './generated-articles';
 
-const {
-  Article,
-  ArticleMultilingual,
-  Category
-}: typeof types;
+import type { Article, ArticleMultilingual, Category } from './types';
 
 // 内部存储类型（多语言）
 type StoredArticle = ArticleMultilingual;
@@ -354,7 +346,7 @@ Une maison connectée utilise des appareils connectés à Internet.
 
 // 获取所有文章 - 返回原始多语言数据
 export function getAllArticles(): StoredArticle[] {
-  return [...articles, ...generatedArticlesData as StoredArticle[]];
+  return [...articles, ...generatedArticles];
 }
 
 // 按语言获取文章 - 返回单语言版本
@@ -386,7 +378,7 @@ export function getArticlesByCategory(categorySlug: string, locale: string = 'en
       title: article.title[locale] || article.title.en,
       description: article.description[locale] || article.description.en,
       content: article.content[locale] || article.content.en,
-      keywords: article.keyword,
+      keywords: article.keywords,
       category: article.category,
       tags: article.tags,
       createdAt: article.createdAt,
