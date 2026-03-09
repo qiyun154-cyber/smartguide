@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAllArticles, getAllCategories } from '@/content/data';
 import { seoConfig } from '@/content/seo';
+import Header from '@/components/Header';
 
 export default function Home() {
   const articles = getAllArticles();
@@ -8,22 +9,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-900">
-            {seoConfig.siteName}
-          </h1>
-          <nav className="flex gap-4">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">
-              Home
-            </Link>
-            <Link href="/en/blog" className="text-gray-600 hover:text-gray-900">
-              Blog
-            </Link>
-          </nav>
-        </div>
-      </header>
+      {/* Header with Language Switcher */}
+      <Header locale="en" siteName={seoConfig.siteName} />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
@@ -73,7 +60,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <h3 className="text-2xl font-bold mb-6">Latest Articles</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {articles.map((article) => (
+            {articles.slice(0, 6).map((article) => (
               <article
                 key={article.id}
                 className="bg-white border rounded-lg overflow-hidden hover:shadow-lg transition"
@@ -106,6 +93,14 @@ export default function Home() {
                 </div>
               </article>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link 
+              href="/en/blog" 
+              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700"
+            >
+              View All Articles →
+            </Link>
           </div>
         </div>
       </section>
