@@ -370,7 +370,9 @@ export function getArticlesByLocale(locale: string): Article[] {
 
 // 按分类获取文章
 export function getArticlesByCategory(categorySlug: string, locale: string = 'en'): Article[] {
-  return articles
+  // 在所有文章中查找（包括示例文章和生成的文章）
+  const allArticles = getAllArticles();
+  return allArticles
     .filter(article => article.category === categorySlug)
     .map((article): Article => ({
       id: article.id,
@@ -391,9 +393,11 @@ export function getArticlesByCategory(categorySlug: string, locale: string = 'en
 
 // 按slug获取单篇文章
 export function getArticleBySlug(slug: string, locale: string = 'en'): Article | undefined {
-  const article = articles.find(a => a.slug === slug);
+  // 在所有文章中查找（包括示例文章和生成的文章）
+  const allArticles = getAllArticles();
+  const article = allArticles.find(a => a.slug === slug);
   if (!article) return undefined;
-  
+
   return {
     id: article.id,
     slug: article.slug,
