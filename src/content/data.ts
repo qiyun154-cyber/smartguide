@@ -6,6 +6,7 @@
 
 // 导入生成的文章数据
 import { generatedArticles } from './generated-articles';
+import { additionalArticles } from './additional-articles';
 
 import type { Article, ArticleMultilingual, Category } from './types';
 
@@ -346,7 +347,7 @@ Une maison connectée utilise des appareils connectés à Internet.
 
 // 获取所有文章 - 返回原始多语言数据
 export function getAllArticles(): StoredArticle[] {
-  return [...articles, ...generatedArticles];
+  return [...articles, ...generatedArticles, ...additionalArticles];
 }
 
 // 按语言获取文章 - 返回单语言版本
