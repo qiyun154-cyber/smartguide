@@ -9,10 +9,10 @@ interface HeaderProps {
   siteName: string;
 }
 
-const navLabels: Record<string, { home: string; blog: string; privacy: string; terms: string }> = {
-  en: { home: 'Home', blog: 'Blog', privacy: 'Privacy', terms: 'Terms' },
-  de: { home: 'Startseite', blog: 'Blog', privacy: 'Datenschutz', terms: 'AGB' },
-  fr: { home: 'Accueil', blog: 'Blog', privacy: 'Confidentialité', terms: 'CGU' },
+const navLabels: Record<string, { home: string; blog: string; about: string; contact: string; privacy: string; terms: string }> = {
+  en: { home: 'Home', blog: 'Blog', about: 'About', contact: 'Contact', privacy: 'Privacy', terms: 'Terms' },
+  de: { home: 'Startseite', blog: 'Blog', about: 'Über Uns', contact: 'Kontakt', privacy: 'Datenschutz', terms: 'AGB' },
+  fr: { home: 'Accueil', blog: 'Blog', about: 'À Propos', contact: 'Contact', privacy: 'Confidentialité', terms: 'CGU' },
 };
 
 export default function Header({ locale, siteName }: HeaderProps) {
@@ -55,6 +55,26 @@ export default function Header({ locale, siteName }: HeaderProps) {
               }`}
             >
               {labels.blog}
+            </Link>
+            <Link
+              href={`${basePath}/about`}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
+                pathname?.includes('/about')
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              {labels.about}
+            </Link>
+            <Link
+              href={`${basePath}/contact`}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
+                pathname?.includes('/contact')
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              {labels.contact}
             </Link>
           </nav>
 
