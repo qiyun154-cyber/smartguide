@@ -9,10 +9,10 @@ interface HeaderProps {
   siteName: string;
 }
 
-const navLabels: Record<string, { home: string; blog: string }> = {
-  en: { home: 'Home', blog: 'Blog' },
-  de: { home: 'Startseite', blog: 'Blog' },
-  fr: { home: 'Accueil', blog: 'Blog' },
+const navLabels: Record<string, { home: string; blog: string; privacy: string; terms: string }> = {
+  en: { home: 'Home', blog: 'Blog', privacy: 'Privacy', terms: 'Terms' },
+  de: { home: 'Startseite', blog: 'Blog', privacy: 'Datenschutz', terms: 'AGB' },
+  fr: { home: 'Accueil', blog: 'Blog', privacy: 'Confidentialité', terms: 'CGU' },
 };
 
 export default function Header({ locale, siteName }: HeaderProps) {
@@ -35,7 +35,7 @@ export default function Header({ locale, siteName }: HeaderProps) {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1">
             <Link
               href={basePath}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
@@ -55,6 +55,30 @@ export default function Header({ locale, siteName }: HeaderProps) {
               }`}
             >
               {labels.blog}
+            </Link>
+          </nav>
+
+          {/* Secondary Links */}
+          <nav className="hidden lg:flex items-center gap-1">
+            <Link
+              href={`${basePath}/privacy`}
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition ${
+                pathname?.includes('/privacy')
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              {labels.privacy}
+            </Link>
+            <Link
+              href={`${basePath}/terms`}
+              className={`px-3 py-2 rounded-lg text-sm font-medium transition ${
+                pathname?.includes('/terms')
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
+              }`}
+            >
+              {labels.terms}
             </Link>
           </nav>
 
