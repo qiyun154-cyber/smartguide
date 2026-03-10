@@ -9,6 +9,7 @@ import { generatedArticles } from './generated-articles';
 import { additionalArticles } from './additional-articles';
 import { moreArticles } from './more-articles';
 import { extraArticles3 } from './extra-articles';
+import { extraArticles4 } from './extra-articles2';
 
 import type { Article, ArticleMultilingual, Category } from './types';
 
@@ -349,7 +350,7 @@ Une maison connectée utilise des appareils connectés à Internet.
 
 // 获取所有文章 - 返回原始多语言数据
 export function getAllArticles(): StoredArticle[] {
-  return [...articles, ...generatedArticles, ...additionalArticles, ...moreArticles, ...extraArticles3];
+  return [...articles, ...generatedArticles, ...additionalArticles, ...moreArticles, ...extraArticles3, ...extraArticles4];
 }
 
 // 按语言获取文章 - 返回单语言版本
