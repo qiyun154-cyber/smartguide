@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Verification Check</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px;">
+    <h1>Google Verification Check</h1>
+    
+    <div style="background: #f0f0f0; padding: 20px; margin: 20px 0; border-left: 4px solid #4CAF50;">
+        <h2 style="margin-top: 0;">Verification Files</h2>
+        <ul>
+            <li><strong>Meta Tag:</strong> ✅ Added in layout.tsx</li>
+            <li><strong>HTML File:</strong> <a href="/google5Ag60hA9dsb23_sj_MqjDYRETTjbduJqwPETQ2_Z6FU.html">/google5Ag60hA9dsb23_sj_MqjDYRETTjbduJqwPETQ2_Z6FU.html</a></li>
+        <li><strong>Sitemap:</strong> <a href="/sitemap.xml">/sitemap.xml</a></li>
+        <li><strong>Robots.txt:</strong> <a href="/robots.txt">/robots.txt</a></li>
+        <li><strong>Ads.txt:</strong> <a href="/ads.txt">/ads.txt</a></li>
+        <li><strong>Articles:</strong> <a href="/en/blog">/en/blog</a> (107 articles)</li>
+        <li><strong>Home:</strong> <a href="/">/</a></li>
+        <li><strong>German:</strong> <a href="/de">/de</a></li>
+            <li><strong>French:</strong> <a href="/fr">/fr</a></li>
+        </ul>
+    </div>
+
+    <div style="background: #fff3cd; padding: 20px; margin: 20px 0; border-left: 4px solid #FF9800;">
+        <h2 style="margin-top: 0;">Google Search Console Verification Token</h2>
+        <p><strong>Token:</strong> <code style="background: #f5f5f5; padding: 4px 8px; font-size: 14px;">5Ag60hA9dsb23_sj_MqjDYRETTjbduJqwPETQ2_Z6FU</code></p>
+        
+        <h3>Steps to Verify:</h3>
+        <ol style="line-height: 1.8;">
+            <li>Wait 2-3 minutes for Vercel deployment to complete</li>
+            <li>Go to <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a></li>
+            <li>Select <strong>HTML file</strong> as verification method</li>
+            <li>Click <strong>Verify</strong></li>
+            <li>The system will check for <code>/google5Ag60hA9dsb23_sj_MqjDYRETTjbduJqwPETQ2_Z6FU.html</code></li>
+        </ol>
+    </div>
+
+    <div style="background: #e8f5e9; padding: 20px; margin: 20px 0; border-left: 4px solid #2196F3;">
+        <h2 style="margin-top: 0;">Alternative: DNS TXT Record</h2>
+        <p>If HTML file method fails, you can use DNS TXT verification:</p>
+        
+        <div style="background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 4px;">
+            <h3 style="margin-top: 0;">DNS TXT Record Setup:</h3>
+            <ol>
+                <li>Go to your domain provider (Vercel settings)</li>
+                <li>Add a TXT record:</li>
+                <li><strong>Name:</strong> <code>@</code> (or your domain name)</li>
+                <li><strong>Value:</strong> <code>google-site-verification=5Ag60hA9dsb23_sj_MqjDYRETTjbduJqwPETQ2_Z6FU</code></li>
+                <li>Save changes and wait for DNS to propagate (may take a few hours)</li>
+                <li>Back to Google Search Console and click <strong>Verify</strong></li>
+            </ol>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; color: #666;">
+        <p>Verification page created at: <strong id="timestamp"></strong></p>
+        <p>Wait for Vercel deployment, then verify in Google Search Console</p>
+    </div>
+
+    <script>
+        // Update timestamp
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
