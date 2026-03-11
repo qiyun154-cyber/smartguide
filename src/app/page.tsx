@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { getAllArticles, getAllCategories } from '@/content/data';
 import { seoConfig } from '@/content/seo';
 import Header from '@/components/Header';
+import AdBanner from '@/components/AdBanner';
 
 export default function Home() {
   const articles = getAllArticles();
@@ -51,6 +52,10 @@ export default function Home() {
                 </p>
               </Link>
             ))}
+          </div>
+          {/* Homepage Ad */}
+          <div className="my-8">
+            <AdBanner slot="9876543212" style={{ display: 'block', textAlign: 'center' }} />
           </div>
         </div>
       </section>

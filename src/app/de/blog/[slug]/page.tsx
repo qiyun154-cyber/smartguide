@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import Header from '@/components/Header';
+import AdBanner from '@/components/AdBanner';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -93,7 +94,15 @@ export default async function BlogPost({ params }: Props) {
 
         {/* Content */}
         <div className="prose prose-lg max-w-none">
+          {/* Top Ad */}
+          <div className="my-6">
+            <AdBanner slot="9876543210" style={{ display: 'block', textAlign: 'center' }} />
+          </div>
           <ReactMarkdown>{article.content}</ReactMarkdown>
+          {/* Bottom Ad */}
+          <div className="my-6">
+            <AdBanner slot="9876543211" style={{ display: 'block', textAlign: 'center' }} />
+          </div>
         </div>
 
         {/* Author */}

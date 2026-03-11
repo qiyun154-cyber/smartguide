@@ -143,7 +143,7 @@ export default function TermsPage() {
           </section>
 
           <section className="bg-blue-50 p-4 rounded-lg">
-            <h3 class="mt-0">Important Notice</h3>
+            <h3 className="mt-0">Important Notice</h3>
             <p>
               Please review these Terms of Service carefully. Your continued use of {seoConfig.siteName} after any changes to these terms constitutes acceptance of the modified terms.
             </p>
