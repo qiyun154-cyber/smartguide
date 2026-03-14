@@ -11,6 +11,13 @@ import { moreArticles } from './more-articles';
 import { extraArticles3 } from './extra-articles';
 import { extraArticles4 } from './extra-articles2';
 
+// 导入新分类文章
+import { newCategories } from './new-categories';
+import { smartWearablesArticles, smartWearablesArticles2, smartWearablesArticles3, smartWearablesArticles4, smartWearablesArticles5, smartWearablesArticles6 } from './smart-wearables-articles';
+import { smartSecurityArticles, smartSecurityArticles2, smartSecurityArticles3, smartSecurityArticles4, smartSecurityArticles5, smartSecurityArticles6 } from './smart-security-articles';
+import { powerBanksArticles, powerBanksArticles2, powerBanksArticles3, powerBanksArticles4, powerBanksArticles5 } from './power-banks-articles';
+import { audioArticles, audioArticles2, audioArticles3, audioArticles4, audioArticles5 } from './audio-articles';
+
 import type { Article, ArticleMultilingual, Category } from './types';
 
 // 内部存储类型（多语言）
@@ -60,6 +67,7 @@ export const categories: Category[] = [
       fr: 'Tutoriels techniques et guides pratiques',
     },
   },
+  ...newCategories
 ];
 
 // 示例文章 - 英文
@@ -350,7 +358,36 @@ Une maison connectée utilise des appareils connectés à Internet.
 
 // 获取所有文章 - 返回原始多语言数据
 export function getAllArticles(): StoredArticle[] {
-  return [...articles, ...generatedArticles, ...additionalArticles, ...moreArticles, ...extraArticles3, ...extraArticles4];
+  return [
+    ...articles,
+    ...generatedArticles,
+    ...additionalArticles,
+    ...moreArticles,
+    ...extraArticles3,
+    ...extraArticles4,
+    ...smartWearablesArticles,
+    ...smartWearablesArticles2,
+    ...smartWearablesArticles3,
+    ...smartWearablesArticles4,
+    ...smartWearablesArticles5,
+    ...smartWearablesArticles6,
+    ...smartSecurityArticles,
+    ...smartSecurityArticles2,
+    ...smartSecurityArticles3,
+    ...smartSecurityArticles4,
+    ...smartSecurityArticles5,
+    ...smartSecurityArticles6,
+    ...powerBanksArticles,
+    ...powerBanksArticles2,
+    ...powerBanksArticles3,
+    ...powerBanksArticles4,
+    ...powerBanksArticles5,
+    ...audioArticles,
+    ...audioArticles2,
+    ...audioArticles3,
+    ...audioArticles4,
+    ...audioArticles5
+  ];
 }
 
 // 按语言获取文章 - 返回单语言版本
