@@ -1434,3 +1434,8 @@ Rappelez-vous que n'importe quel système de sécurité est meilleur qu'aucun sy
   }
 ];
 
+
+export { smartSecurityArticles5 } from './smart-security-articles5';
+export { smartSecurityArticles6 } from './smart-security-articles6';
+export { smartSecurityArticles7 } from './smart-security-articles7';
+export { smartSecurityArticles8 } from './smart-security-articles8';

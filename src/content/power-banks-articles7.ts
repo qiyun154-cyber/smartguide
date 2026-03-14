@@ -381,7 +381,7 @@ Parfait pour les tables de nuit.`,
     description: {
       en: 'Important safety information for power banks. Fire risks, proper usage, and warning signs.',
       de: 'Wichtige Sicherheitsinformationen für Power Banks. Brandrisiken, richtige Verwendung und Warnzeichen.',
-      fr: 'Informations de sécurité importantes. Risques d'incendie, utilisation appropriée et signes d\'alerte.',
+      fr: 'Informations de sécurité importantes. Risques d-, utilisation appropriée et signes d\'alerte.',
     },
     content: {
       en: `# Power Bank Safety Guide
@@ -523,7 +523,7 @@ Safety is paramount. Buy quality, use properly, and dispose responsibly.`,
 Sicherheit ist das Wichtigste.`,
       fr: `# Guide de sécurité batterie externe
 
-## Risques d'incendie
+## Risques d-
 
 ### Pourquoi les batteries lithium brûlent
 - **_emballement thermique:** Réaction en chaîne

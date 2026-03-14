@@ -1486,3 +1486,8 @@ N'oubliez pas que les déclarations de capacité peuvent varier en fonction de l
   }
 ];
 
+
+export { powerBanksArticles4 } from './power-banks-articles4';
+export { powerBanksArticles5 } from './power-banks-articles5';
+export { powerBanksArticles6 } from './power-banks-articles6';
+export { powerBanksArticles7 } from './power-banks-articles7';

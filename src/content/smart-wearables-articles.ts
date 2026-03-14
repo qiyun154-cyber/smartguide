@@ -1978,3 +1978,9 @@ Le marché des montres connectées en 2024 offre d'excellentes options pour chaq
   }
 ];
 
+
+// Re-export from batch files
+export { smartWearablesArticles5 } from './smart-wearables-articles5';
+export { smartWearablesArticles6 } from './smart-wearables-articles6';
+export { smartWearablesArticles7 } from './smart-wearables-articles7';
+export { smartWearablesArticles8 } from './smart-wearables-articles8';
