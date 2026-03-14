@@ -13,10 +13,10 @@ import { extraArticles4 } from './extra-articles2';
 
 // 导入新分类文章
 import { newCategories } from './new-categories';
-import { smartWearablesArticles, smartWearablesArticles2, smartWearablesArticles3, smartWearablesArticles4, smartWearablesArticles5, smartWearablesArticles6, smartWearablesArticles7 } from './smart-wearables-articles';
-import { smartSecurityArticles, smartSecurityArticles2, smartSecurityArticles3, smartSecurityArticles4, smartSecurityArticles5, smartSecurityArticles6, smartSecurityArticles7 } from './smart-security-articles';
-import { powerBanksArticles, powerBanksArticles2, powerBanksArticles3, powerBanksArticles4, powerBanksArticles5, powerBanksArticles6 } from './power-banks-articles';
-import { audioArticles, audioArticles2, audioArticles3, audioArticles4, audioArticles5, audioArticles6 } from './audio-articles';
+import { smartWearablesArticles, smartWearablesArticles2, smartWearablesArticles3, smartWearablesArticles4, smartWearablesArticles5, smartWearablesArticles6, smartWearablesArticles7, smartWearablesArticles8 } from './smart-wearables-articles';
+import { smartSecurityArticles, smartSecurityArticles2, smartSecurityArticles3, smartSecurityArticles4, smartSecurityArticles5, smartSecurityArticles6, smartSecurityArticles7, smartSecurityArticles8 } from './smart-security-articles';
+import { powerBanksArticles, powerBanksArticles2, powerBanksArticles3, powerBanksArticles4, powerBanksArticles5, powerBanksArticles6, powerBanksArticles7 } from './power-banks-articles';
+import { audioArticles, audioArticles2, audioArticles3, audioArticles4, audioArticles5, audioArticles6, audioArticles7 } from './audio-articles';
 
 import type { Article, ArticleMultilingual, Category } from './types';
 
@@ -372,6 +372,7 @@ export function getAllArticles(): StoredArticle[] {
     ...smartWearablesArticles5,
     ...smartWearablesArticles6,
     ...smartWearablesArticles7,
+    ...smartWearablesArticles8,
     ...smartSecurityArticles,
     ...smartSecurityArticles2,
     ...smartSecurityArticles3,
@@ -379,18 +380,21 @@ export function getAllArticles(): StoredArticle[] {
     ...smartSecurityArticles5,
     ...smartSecurityArticles6,
     ...smartSecurityArticles7,
+    ...smartSecurityArticles8,
     ...powerBanksArticles,
     ...powerBanksArticles2,
     ...powerBanksArticles3,
     ...powerBanksArticles4,
     ...powerBanksArticles5,
     ...powerBanksArticles6,
+    ...powerBanksArticles7,
     ...audioArticles,
     ...audioArticles2,
     ...audioArticles3,
     ...audioArticles4,
     ...audioArticles5,
-    ...audioArticles6
+    ...audioArticles6,
+    ...audioArticles7
   ];
 }
 
