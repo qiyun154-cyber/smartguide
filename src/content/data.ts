@@ -13,10 +13,10 @@ import { extraArticles4 } from './extra-articles2';
 
 // 导入新分类文章
 import { newCategories } from './new-categories';
-import { smartWearablesArticles, smartWearablesArticles2, smartWearablesArticles3, smartWearablesArticles4, smartWearablesArticles5, smartWearablesArticles6 } from './smart-wearables-articles';
-import { smartSecurityArticles, smartSecurityArticles2, smartSecurityArticles3, smartSecurityArticles4, smartSecurityArticles5, smartSecurityArticles6 } from './smart-security-articles';
-import { powerBanksArticles, powerBanksArticles2, powerBanksArticles3, powerBanksArticles4, powerBanksArticles5 } from './power-banks-articles';
-import { audioArticles, audioArticles2, audioArticles3, audioArticles4, audioArticles5 } from './audio-articles';
+import { smartWearablesArticles, smartWearablesArticles2, smartWearablesArticles3, smartWearablesArticles4, smartWearablesArticles5, smartWearablesArticles6, smartWearablesArticles7 } from './smart-wearables-articles';
+import { smartSecurityArticles, smartSecurityArticles2, smartSecurityArticles3, smartSecurityArticles4, smartSecurityArticles5, smartSecurityArticles6, smartSecurityArticles7 } from './smart-security-articles';
+import { powerBanksArticles, powerBanksArticles2, powerBanksArticles3, powerBanksArticles4, powerBanksArticles5, powerBanksArticles6 } from './power-banks-articles';
+import { audioArticles, audioArticles2, audioArticles3, audioArticles4, audioArticles5, audioArticles6 } from './audio-articles';
 
 import type { Article, ArticleMultilingual, Category } from './types';
 
@@ -371,22 +371,26 @@ export function getAllArticles(): StoredArticle[] {
     ...smartWearablesArticles4,
     ...smartWearablesArticles5,
     ...smartWearablesArticles6,
+    ...smartWearablesArticles7,
     ...smartSecurityArticles,
     ...smartSecurityArticles2,
     ...smartSecurityArticles3,
     ...smartSecurityArticles4,
     ...smartSecurityArticles5,
     ...smartSecurityArticles6,
+    ...smartSecurityArticles7,
     ...powerBanksArticles,
     ...powerBanksArticles2,
     ...powerBanksArticles3,
     ...powerBanksArticles4,
     ...powerBanksArticles5,
+    ...powerBanksArticles6,
     ...audioArticles,
     ...audioArticles2,
     ...audioArticles3,
     ...audioArticles4,
-    ...audioArticles5
+    ...audioArticles5,
+    ...audioArticles6
   ];
 }
 
