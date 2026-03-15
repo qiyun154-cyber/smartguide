@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getAllArticles, getAllCategories } from '@/content/data';
 import { seoConfig } from '@/content/seo';
 import Header from '@/components/Header';
-import AdBanner from '@/components/AdBanner';
+import { AdBanner } from '@/components/AdBanner.dynamic';
 
 export default function Home() {
   const articles = getAllArticles();

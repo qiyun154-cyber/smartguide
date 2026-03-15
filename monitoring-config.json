@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-03-14T20:55:54.184Z",
+  "baseUrl": "https://smartguide-ten.vercel.app",
+  "sitemapUrl": "https://smartguide-ten.vercel.app/sitemap.xml",
+  "monitoring": {
+    "uptimeRobot": {
+      "url": "https://uptimerobot.com",
+      "monitors": [
+        {
+          "name": "SmartGuide 主页",
+          "url": "https://smartguide-ten.vercel.app",
+          "interval": "5 minutes"
+        },
+        {
+          "name": "SmartGuide 关于页面",
+          "url": "https://smartguide-ten.vercel.app/en/about",
+          "interval": "5 minutes"
+        },
+        {
+          "name": "SmartGuide Sitemap",
+          "url": "https://smartguide-ten.vercel.app/sitemap.xml",
+          "interval": "30 minutes"
+        }
+      ]
+    },
+    "googleSearchConsole": {
+      "url": "https://search.google.com/search-console",
+      "domain": "https://smartguide-ten.vercel.app",
+      "sitemap": "https://smartguide-ten.vercel.app/sitemap.xml",
+      "verificationFile": "/verification.html"
+    },
+    "pageSpeedInsights": {
+      "url": "https://pagespeed.web.dev",
+      "pages": [
+        "https://smartguide-ten.vercel.app",
+        "https://smartguide-ten.vercel.app/en/blog/best-smart-home-devices-2024",
+        "https://smartguide-ten.vercel.app/en/category/smart-home"
+      ]
+    }
+  }
+}

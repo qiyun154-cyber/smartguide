@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "health:check": "node scripts/quick-check.js",
+    "health:full": "node scripts/health-check-build.js",
+    "health:online": "node scripts/health-check.js",
+    "monitoring:setup": "node scripts/setup-monitoring.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

@@ -50,6 +50,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Performance: Preconnect to external domains */}
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        
         {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="5Ag60hA9dsb23_sj_MqjDYRETTjbduJqwPETQ2_Z6FU" />
         
